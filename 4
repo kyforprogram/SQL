@@ -1,1 +1,39 @@
 
+4-1----------------------------------------
+
+4-4----------------------------------------
+select * from kakeibo 
+	order by syukkin desc;
+	
+select * from kakeibo
+	order by syukkin asc;
+	
+4-5----------------------------------------
+select * from kakeibo
+	order by hiduke desc;
+
+4-6----------------------------------------
+select * from kakeibo
+	order by nyukin desc, syukkin desc;
+4-7----------------------------------------
+select * from kakeibo
+	order by 4 desc, 5 desc;
+
+
+select syukkin, nyukin from kakeibo 
+	order by 1 desc, 2 desc;
+
+select nyukin, syukkin from kakeibo 
+	order by 1 desc, 2 desc;
+
+4-8----------------------------------------
+select himoku, syukkin from kakeibo
+	order by syukkin desc
+	limit 3
+	offset 0;
+	
+select himoku, syukkin from kakeibo
+	order by syukkin desc
+	limit 1
+	offset 2;
+	
